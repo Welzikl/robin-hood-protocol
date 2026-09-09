@@ -1,0 +1,689 @@
+{
+  "dataset": "v2",
+  "device": "cpu",
+  "seed": 20260618,
+  "target_pairs": [
+    "USDCNH",
+    "USDHUF",
+    "USDMXN",
+    "USDPLN",
+    "USDTRY",
+    "USDZAR"
+  ],
+  "task": "full_10d_wings",
+  "regime_priority": [
+    "high_spot_move",
+    "wide_vol_spread",
+    "lower_liquidity_pair"
+  ],
+  "candidate_methods": [
+    "previous_surface",
+    "sticky",
+    "pca_5_components",
+    "lagged_target_only_vae",
+    "lagged_transfer_vae"
+  ],
+  "interval_quantile": 0.9,
+  "thresholds": {
+    "AUDUSD": {
+      "high_spot_move": 0.0066645133965044555,
+      "wide_vol_spread": 0.5001999999999999
+    },
+    "EURUSD": {
+      "high_spot_move": 0.005528997366398756,
+      "wide_vol_spread": 0.41199999999999987
+    },
+    "GBPUSD": {
+      "high_spot_move": 0.005567123640899632,
+      "wide_vol_spread": 0.6949999999999998
+    },
+    "NZDUSD": {
+      "high_spot_move": 0.007244801407899719,
+      "wide_vol_spread": 0.6988
+    },
+    "USDCAD": {
+      "high_spot_move": 0.005214941417046135,
+      "wide_vol_spread": 0.5779999999999998
+    },
+    "USDCHF": {
+      "high_spot_move": 0.005633817718255844,
+      "wide_vol_spread": 0.6644
+    },
+    "USDCNH": {
+      "high_spot_move": 0.0021358278676611385,
+      "wide_vol_spread": 0.5287999999999999
+    },
+    "USDHUF": {
+      "high_spot_move": 0.00795614622098033,
+      "wide_vol_spread": 2.0132
+    },
+    "USDJPY": {
+      "high_spot_move": 0.0052075473787493946,
+      "wide_vol_spread": 0.4792000000000002
+    },
+    "USDMXN": {
+      "high_spot_move": 0.007783593191153718,
+      "wide_vol_spread": 1.0411999999999997
+    },
+    "USDPLN": {
+      "high_spot_move": 0.0077719908925860635,
+      "wide_vol_spread": 1.479
+    },
+    "USDTRY": {
+      "high_spot_move": 0.008047253727348873,
+      "wide_vol_spread": 1.6749999999999994
+    },
+    "USDZAR": {
+      "high_spot_move": 0.010379885229582332,
+      "wide_vol_spread": 1.5450000000000004
+    }
+  },
+  "training_history": {
+    "lagged_target_only_vae": {
+      "finetune": [
+        {
+          "epoch": 1,
+          "loss": 0.5200090525965941,
+          "reconstruction": 0.5198254318613755,
+          "kl": 0.09180974254482671
+        },
+        {
+          "epoch": 16,
+          "loss": 0.03407941984110757,
+          "reconstruction": 0.03248613347348414,
+          "kl": 0.7966431442059969
+        },
+        {
+          "epoch": 32,
+          "loss": 0.023978051092279584,
+          "reconstruction": 0.022539149969816208,
+          "kl": 0.7194505584867377
+        },
+        {
+          "epoch": 48,
+          "loss": 0.01909858007964335,
+          "reconstruction": 0.01774439960718155,
+          "kl": 0.677090237015172
+        },
+        {
+          "epoch": 64,
+          "loss": 0.017969917604013494,
+          "reconstruction": 0.016708697486472756,
+          "kl": 0.630609995440433
+        },
+        {
+          "epoch": 80,
+          "loss": 0.015396386188896079,
+          "reconstruction": 0.014210575309238936,
+          "kl": 0.5929054931590432
+        },
+        {
+          "epoch": 96,
+          "loss": 0.015124884139942495,
+          "reconstruction": 0.014013549901152911,
+          "kl": 0.5556671148852298
+        },
+        {
+          "epoch": 112,
+          "loss": 0.014235539852004302,
+          "reconstruction": 0.013163106810105475,
+          "kl": 0.5362165319292169
+        },
+        {
+          "epoch": 128,
+          "loss": 0.014462987598227827,
+          "reconstruction": 0.013452047678200822,
+          "kl": 0.5054699511904466
+        },
+        {
+          "epoch": 144,
+          "loss": 0.012715670917379228,
+          "reconstruction": 0.01174439205542991,
+          "kl": 0.4856393682329278
+        },
+        {
+          "epoch": 160,
+          "loss": 0.0116220432774801,
+          "reconstruction": 0.010686679645196387,
+          "kl": 0.4676817592821623
+        }
+      ]
+    },
+    "lagged_transfer_vae": {
+      "pretrain": [
+        {
+          "epoch": 1,
+          "loss": 0.5504066280343316,
+          "reconstruction": 0.5502517792311582,
+          "kl": 0.07742195045152171
+        },
+        {
+          "epoch": 14,
+          "loss": 0.03674768859689886,
+          "reconstruction": 0.035737242210995064,
+          "kl": 0.5052230656147003
+        },
+        {
+          "epoch": 28,
+          "loss": 0.021985125304623085,
+          "reconstruction": 0.020759729329835285,
+          "kl": 0.6126979697834362
+        },
+        {
+          "epoch": 42,
+          "loss": 0.017494508149948986,
+          "reconstruction": 0.016414859670807014,
+          "kl": 0.5398242961276661
+        },
+        {
+          "epoch": 56,
+          "loss": 0.01521389643577012,
+          "reconstruction": 0.014224457808516243,
+          "kl": 0.49471932920542633
+        },
+        {
+          "epoch": 70,
+          "loss": 0.013216013512150808,
+          "reconstruction": 0.0122479253702543,
+          "kl": 0.48404405333779077
+        },
+        {
+          "epoch": 84,
+          "loss": 0.012387068857523527,
+          "reconstruction": 0.011454983868382194,
+          "kl": 0.4660424373366616
+        },
+        {
+          "epoch": 98,
+          "loss": 0.011230071329257706,
+          "reconstruction": 0.010331600650467655,
+          "kl": 0.44923536344008014
+        },
+        {
+          "epoch": 112,
+          "loss": 0.01160486592826518,
+          "reconstruction": 0.01073745350268754,
+          "kl": 0.43370621312748303
+        },
+        {
+          "epoch": 126,
+          "loss": 0.01060193091292273,
+          "reconstruction": 0.009755582464012232,
+          "kl": 0.4231742186979814
+        },
+        {
+          "epoch": 140,
+          "loss": 0.010124547491696749,
+          "reconstruction": 0.009290470149029385,
+          "kl": 0.4170386493206024
+        }
+      ],
+      "finetune": [
+        {
+          "epoch": 1,
+          "loss": 0.032098746907554175,
+          "reconstruction": 0.031206227544891208,
+          "kl": 0.4462596711359526
+        },
+        {
+          "epoch": 10,
+          "loss": 0.01754474193838082,
+          "reconstruction": 0.016643832731795937,
+          "kl": 0.45045459113622965
+        },
+        {
+          "epoch": 20,
+          "loss": 0.01662387860644805,
+          "reconstruction": 0.01574257815158681,
+          "kl": 0.44065020586314957
+        },
+        {
+          "epoch": 30,
+          "loss": 0.014557583257555962,
+          "reconstruction": 0.013684637305375776,
+          "kl": 0.43647302608740957
+        },
+        {
+          "epoch": 40,
+          "loss": 0.013685739305066435,
+          "reconstruction": 0.012836301797314695,
+          "kl": 0.4247187172111712
+        },
+        {
+          "epoch": 50,
+          "loss": 0.012518211022803658,
+          "reconstruction": 0.011682991183509952,
+          "kl": 0.41760993160699544
+        },
+        {
+          "epoch": 60,
+          "loss": 0.012084563605879483,
+          "reconstruction": 0.01124939440112365,
+          "kl": 0.4175845619879271
+        },
+        {
+          "epoch": 70,
+          "loss": 0.011302384351821322,
+          "reconstruction": 0.010479930690244624,
+          "kl": 0.41122679177083465
+        },
+        {
+          "epoch": 80,
+          "loss": 0.012289395506836866,
+          "reconstruction": 0.011488568429884157,
+          "kl": 0.40041351632068034
+        },
+        {
+          "epoch": 90,
+          "loss": 0.010857367201855308,
+          "reconstruction": 0.010060059543895094,
+          "kl": 0.39865381780423614
+        },
+        {
+          "epoch": 100,
+          "loss": 0.011205471267825678,
+          "reconstruction": 0.010410024196301637,
+          "kl": 0.3977235304681878
+        }
+      ]
+    }
+  },
+  "validation_count": 31030,
+  "test_count": 38460,
+  "policies": {
+    "previous_surface_only": {
+      "high_spot_move": "previous_surface",
+      "wide_vol_spread": "previous_surface",
+      "lower_liquidity_pair": "previous_surface",
+      "normal": "previous_surface"
+    },
+    "sticky_only": {
+      "high_spot_move": "sticky",
+      "wide_vol_spread": "sticky",
+      "lower_liquidity_pair": "sticky",
+      "normal": "sticky"
+    },
+    "pca_only": {
+      "high_spot_move": "pca_5_components",
+      "wide_vol_spread": "pca_5_components",
+      "lower_liquidity_pair": "pca_5_components",
+      "normal": "pca_5_components"
+    },
+    "lagged_target_only_vae_only": {
+      "high_spot_move": "lagged_target_only_vae",
+      "wide_vol_spread": "lagged_target_only_vae",
+      "lower_liquidity_pair": "lagged_target_only_vae",
+      "normal": "lagged_target_only_vae"
+    },
+    "lagged_transfer_vae_only": {
+      "high_spot_move": "lagged_transfer_vae",
+      "wide_vol_spread": "lagged_transfer_vae",
+      "lower_liquidity_pair": "lagged_transfer_vae",
+      "normal": "lagged_transfer_vae"
+    },
+    "validation_regime_switcher": {
+      "high_spot_move": "lagged_transfer_vae",
+      "wide_vol_spread": "previous_surface",
+      "lower_liquidity_pair": "previous_surface",
+      "normal": "previous_surface"
+    }
+  },
+  "interval_widths": {
+    "previous_surface_only": {
+      "high_spot_move": 0.34500000000000064,
+      "wide_vol_spread": 1.0199999999999965,
+      "lower_liquidity_pair": 0.2649999999999999,
+      "normal": 0.15499999999999942
+    },
+    "sticky_only": {
+      "high_spot_move": 0.3453666666666667,
+      "wide_vol_spread": 1.0386166666666663,
+      "lower_liquidity_pair": 0.24153333333333352,
+      "normal": 0.16166666666666626
+    },
+    "pca_only": {
+      "high_spot_move": 0.49364267097039416,
+      "wide_vol_spread": 2.6965720075650856,
+      "lower_liquidity_pair": 0.4758583484503575,
+      "normal": 0.37089468383741386
+    },
+    "lagged_target_only_vae_only": {
+      "high_spot_move": 0.28705353927612304,
+      "wide_vol_spread": 1.999706146240233,
+      "lower_liquidity_pair": 0.24839781188964832,
+      "normal": 0.18697674369812056
+    },
+    "lagged_transfer_vae_only": {
+      "high_spot_move": 0.264053119659424,
+      "wide_vol_spread": 1.4197629566192638,
+      "lower_liquidity_pair": 0.24417921638488754,
+      "normal": 0.16216283321380615
+    },
+    "validation_regime_switcher": {
+      "high_spot_move": 0.264053119659424,
+      "wide_vol_spread": 1.0199999999999965,
+      "lower_liquidity_pair": 0.2649999999999999,
+      "normal": 0.15499999999999942
+    }
+  },
+  "validation_metrics": {
+    "previous_surface_only": {
+      "count": 31030,
+      "point_mae": 0.16216153722205048,
+      "point_rmse": 0.40574679772686967,
+      "within_spread_rate": 0.9955204640670319,
+      "coverage": 0.9000644537544312,
+      "average_width": 0.7823267805352873,
+      "method_counts": {
+        "previous_surface": 31030
+      },
+      "bucket_counts": {
+        "high_spot_move": 8900,
+        "normal": 9800,
+        "wide_vol_spread": 5670,
+        "lower_liquidity_pair": 6660
+      },
+      "by_bucket_mae": {
+        "high_spot_move": 0.14888988764045033,
+        "normal": 0.06181479591836531,
+        "wide_vol_spread": 0.4173037918871267,
+        "lower_liquidity_pair": 0.11033858858858572
+      },
+      "by_method_mae": {
+        "previous_surface": 0.16216153722205048
+      }
+    },
+    "sticky_only": {
+      "count": 31030,
+      "point_mae": 0.1737154785691264,
+      "point_rmse": 0.4004635128317835,
+      "within_spread_rate": 0.9943602964872704,
+      "coverage": 0.9,
+      "average_width": 0.7834782576001087,
+      "method_counts": {
+        "sticky": 31030
+      },
+      "bucket_counts": {
+        "high_spot_move": 8900,
+        "normal": 9800,
+        "wide_vol_spread": 5670,
+        "lower_liquidity_pair": 6660
+      },
+      "by_bucket_mae": {
+        "high_spot_move": 0.16326832958801452,
+        "normal": 0.07468782312925212,
+        "wide_vol_spread": 0.4334275426219861,
+        "lower_liquidity_pair": 0.11228653653653685
+      },
+      "by_method_mae": {
+        "sticky": 0.1737154785691264
+      }
+    },
+    "pca_only": {
+      "count": 31030,
+      "point_mae": 0.42674041263796575,
+      "point_rmse": 0.7912594680509079,
+      "within_spread_rate": 0.9520464067031904,
+      "coverage": 0.9,
+      "average_width": 1.7071845025343708,
+      "method_counts": {
+        "pca_5_components": 31030
+      },
+      "bucket_counts": {
+        "high_spot_move": 8900,
+        "normal": 9800,
+        "wide_vol_spread": 5670,
+        "lower_liquidity_pair": 6660
+      },
+      "by_bucket_mae": {
+        "high_spot_move": 0.2940035308571887,
+        "normal": 0.20836310905281472,
+        "wide_vol_spread": 1.2176129837127216,
+        "lower_liquidity_pair": 0.25214707104481265
+      },
+      "by_method_mae": {
+        "pca_5_components": 0.42674041263796575
+      }
+    },
+    "lagged_target_only_vae_only": {
+      "count": 31030,
+      "point_mae": 0.25649921245295454,
+      "point_rmse": 0.6220887328001371,
+      "within_spread_rate": 0.9923944569771189,
+      "coverage": 0.9,
+      "average_width": 1.1201941259533623,
+      "method_counts": {
+        "lagged_target_only_vae": 31030
+      },
+      "bucket_counts": {
+        "high_spot_move": 8900,
+        "normal": 9800,
+        "wide_vol_spread": 5670,
+        "lower_liquidity_pair": 6660
+      },
+      "by_bucket_mae": {
+        "high_spot_move": 0.15144329990911976,
+        "normal": 0.07776808943456552,
+        "wide_vol_spread": 0.8943646906973864,
+        "lower_liquidity_pair": 0.11683935743409254
+      },
+      "by_method_mae": {
+        "lagged_target_only_vae": 0.25649921245295454
+      }
+    },
+    "lagged_transfer_vae_only": {
+      "count": 31030,
+      "point_mae": 0.19564462488722678,
+      "point_rmse": 0.46457474938690263,
+      "within_spread_rate": 0.9959071865936191,
+      "coverage": 0.9,
+      "average_width": 0.877573836649513,
+      "method_counts": {
+        "lagged_transfer_vae": 31030
+      },
+      "bucket_counts": {
+        "high_spot_move": 8900,
+        "normal": 9800,
+        "wide_vol_spread": 5670,
+        "lower_liquidity_pair": 6660
+      },
+      "by_bucket_mae": {
+        "high_spot_move": 0.13566138929838506,
+        "normal": 0.07005242894912277,
+        "wide_vol_spread": 0.6049504529977815,
+        "lower_liquidity_pair": 0.11214466566008492
+      },
+      "by_method_mae": {
+        "lagged_transfer_vae": 0.19564462488722678
+      }
+    },
+    "validation_regime_switcher": {
+      "count": 31030,
+      "point_mae": 0.15836734981488348,
+      "point_rmse": 0.40960623233326,
+      "within_spread_rate": 0.9961327747341283,
+      "coverage": 0.9,
+      "average_width": 0.7358925404430896,
+      "method_counts": {
+        "lagged_transfer_vae": 8900,
+        "previous_surface": 22130
+      },
+      "bucket_counts": {
+        "high_spot_move": 8900,
+        "normal": 9800,
+        "wide_vol_spread": 5670,
+        "lower_liquidity_pair": 6660
+      },
+      "by_bucket_mae": {
+        "high_spot_move": 0.13566138929838506,
+        "normal": 0.06181479591836531,
+        "wide_vol_spread": 0.4173037918871267,
+        "lower_liquidity_pair": 0.11033858858858572
+      },
+      "by_method_mae": {
+        "lagged_transfer_vae": 0.13566138929838506,
+        "previous_surface": 0.16749898328061918
+      }
+    }
+  },
+  "test_metrics": {
+    "previous_surface_only": {
+      "count": 38460,
+      "point_mae": 0.08792043681748407,
+      "point_rmse": 0.275069669825527,
+      "within_spread_rate": 0.9978679147165886,
+      "coverage": 0.9461778471138845,
+      "average_width": 0.8167420696831543,
+      "method_counts": {
+        "previous_surface": 38460
+      },
+      "bucket_counts": {
+        "normal": 14270,
+        "high_spot_move": 5780,
+        "wide_vol_spread": 8770,
+        "lower_liquidity_pair": 9640
+      },
+      "by_bucket_mae": {
+        "normal": 0.05727575332865941,
+        "high_spot_move": 0.11240830449826816,
+        "wide_vol_spread": 0.16538027366020575,
+        "lower_liquidity_pair": 0.04813174273858663
+      },
+      "by_method_mae": {
+        "previous_surface": 0.08792043681748407
+      }
+    },
+    "sticky_only": {
+      "count": 38460,
+      "point_mae": 0.1100230958571674,
+      "point_rmse": 0.2716358431075719,
+      "within_spread_rate": 0.9960478419136766,
+      "coverage": 0.935439417576703,
+      "average_width": 0.8185258537007873,
+      "method_counts": {
+        "sticky": 38460
+      },
+      "bucket_counts": {
+        "normal": 14270,
+        "high_spot_move": 5780,
+        "wide_vol_spread": 8770,
+        "lower_liquidity_pair": 9640
+      },
+      "by_bucket_mae": {
+        "normal": 0.07516212567157185,
+        "high_spot_move": 0.15500875432525926,
+        "wide_vol_spread": 0.18197162295705072,
+        "lower_liquidity_pair": 0.06919948132780136
+      },
+      "by_method_mae": {
+        "sticky": 0.1100230958571674
+      }
+    },
+    "pca_only": {
+      "count": 38460,
+      "point_mae": 0.4062617282652327,
+      "point_rmse": 0.8530625722526115,
+      "within_spread_rate": 0.9386895475819033,
+      "coverage": 0.878653146125845,
+      "average_width": 1.8919465814859746,
+      "method_counts": {
+        "pca_5_components": 38460
+      },
+      "bucket_counts": {
+        "normal": 14270,
+        "high_spot_move": 5780,
+        "wide_vol_spread": 8770,
+        "lower_liquidity_pair": 9640
+      },
+      "by_bucket_mae": {
+        "normal": 0.22955494749620303,
+        "high_spot_move": 0.2066130732681901,
+        "wide_vol_spread": 1.1124592815591223,
+        "lower_liquidity_pair": 0.14508148397783188
+      },
+      "by_method_mae": {
+        "pca_5_components": 0.4062617282652327
+      }
+    },
+    "lagged_target_only_vae_only": {
+      "count": 38460,
+      "point_mae": 0.21350316929826593,
+      "point_rmse": 0.483875459285239,
+      "within_spread_rate": 0.9952418096723868,
+      "coverage": 0.9217888715548622,
+      "average_width": 1.2615343421079357,
+      "method_counts": {
+        "lagged_target_only_vae": 38460
+      },
+      "bucket_counts": {
+        "normal": 14270,
+        "high_spot_move": 5780,
+        "wide_vol_spread": 8770,
+        "lower_liquidity_pair": 9640
+      },
+      "by_bucket_mae": {
+        "normal": 0.0967644405378354,
+        "high_spot_move": 0.09921714884950172,
+        "wide_vol_spread": 0.6505905555281435,
+        "lower_liquidity_pair": 0.0571938830295043
+      },
+      "by_method_mae": {
+        "lagged_target_only_vae": 0.21350316929826593
+      }
+    },
+    "lagged_transfer_vae_only": {
+      "count": 38460,
+      "point_mae": 0.2721289667158899,
+      "point_rmse": 0.6900006126962521,
+      "within_spread_rate": 0.983749349973999,
+      "coverage": 0.8614404576183047,
+      "average_width": 0.9696047549190064,
+      "method_counts": {
+        "lagged_transfer_vae": 38460
+      },
+      "bucket_counts": {
+        "normal": 14270,
+        "high_spot_move": 5780,
+        "wide_vol_spread": 8770,
+        "lower_liquidity_pair": 9640
+      },
+      "by_bucket_mae": {
+        "normal": 0.08700461469142683,
+        "high_spot_move": 0.09724420161808203,
+        "wide_vol_spread": 0.9332920916348266,
+        "lower_liquidity_pair": 0.04953123228802188
+      },
+      "by_method_mae": {
+        "lagged_transfer_vae": 0.2721289667158899
+      }
+    },
+    "validation_regime_switcher": {
+      "count": 38460,
+      "point_mae": 0.08564148427854713,
+      "point_rmse": 0.26446948057167835,
+      "within_spread_rate": 0.997581903276131,
+      "coverage": 0.9463078523140925,
+      "average_width": 0.7924117021133174,
+      "method_counts": {
+        "previous_surface": 32680,
+        "lagged_transfer_vae": 5780
+      },
+      "bucket_counts": {
+        "normal": 14270,
+        "high_spot_move": 5780,
+        "wide_vol_spread": 8770,
+        "lower_liquidity_pair": 9640
+      },
+      "by_bucket_mae": {
+        "normal": 0.05727575332865941,
+        "high_spot_move": 0.09724420161808203,
+        "wide_vol_spread": 0.16538027366020575,
+        "lower_liquidity_pair": 0.04813174273858663
+      },
+      "by_method_mae": {
+        "previous_surface": 0.08358935128519662,
+        "lagged_transfer_vae": 0.09724420161808203
+      }
+    }
+  }
+}

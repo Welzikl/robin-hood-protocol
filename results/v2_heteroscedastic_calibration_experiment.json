@@ -1,0 +1,575 @@
+{
+  "description": "V2 heteroscedastic calibrated VAE interval evaluation by stress and liquidity regime.",
+  "device": "cpu",
+  "seed": 20260618,
+  "calibration_quantile": 0.9,
+  "regimes": [
+    "high_spot_move",
+    "wide_vol_spread",
+    "lower_liquidity_pair"
+  ],
+  "training_history": {
+    "pretrain": [
+      {
+        "epoch": 1,
+        "loss": 0.8372659683227539,
+        "reconstruction": 0.8369600935415789,
+        "kl": 0.15293462746988304
+      },
+      {
+        "epoch": 14,
+        "loss": 0.10712940381331877,
+        "reconstruction": 0.10224969685077667,
+        "kl": 2.4398533430966465
+      },
+      {
+        "epoch": 28,
+        "loss": 0.052161565219814125,
+        "reconstruction": 0.04749568754976446,
+        "kl": 2.332938649437644
+      },
+      {
+        "epoch": 42,
+        "loss": 0.04169321195645766,
+        "reconstruction": 0.03728179362687198,
+        "kl": 2.2057092406532983
+      },
+      {
+        "epoch": 56,
+        "loss": 0.03579011220823635,
+        "reconstruction": 0.03155161169442264,
+        "kl": 2.1192502975463867
+      },
+      {
+        "epoch": 70,
+        "loss": 0.03064746663651683,
+        "reconstruction": 0.026572899384932083,
+        "kl": 2.0372836589813232
+      },
+      {
+        "epoch": 84,
+        "loss": 0.028790108520876278,
+        "reconstruction": 0.024874256923794746,
+        "kl": 1.957925644787875
+      },
+      {
+        "epoch": 98,
+        "loss": 0.025284315544095905,
+        "reconstruction": 0.021527806635607372,
+        "kl": 1.8782544461163608
+      },
+      {
+        "epoch": 112,
+        "loss": 0.02276247502727942,
+        "reconstruction": 0.01913485066457228,
+        "kl": 1.8138121149756692
+      },
+      {
+        "epoch": 126,
+        "loss": 0.02404723180965944,
+        "reconstruction": 0.020564401014284653,
+        "kl": 1.7414153164083308
+      },
+      {
+        "epoch": 140,
+        "loss": 0.02258694493635134,
+        "reconstruction": 0.019240646707740696,
+        "kl": 1.6731489354913884
+      }
+    ],
+    "finetune": [
+      {
+        "epoch": 1,
+        "loss": 0.07895488017483761,
+        "reconstruction": 0.07562828416887082,
+        "kl": 1.6632982555188631
+      },
+      {
+        "epoch": 10,
+        "loss": 0.04152873609411089,
+        "reconstruction": 0.03811764599461304,
+        "kl": 1.705544728981821
+      },
+      {
+        "epoch": 20,
+        "loss": 0.03616679322562719,
+        "reconstruction": 0.03287770657947189,
+        "kl": 1.644543114461397
+      },
+      {
+        "epoch": 30,
+        "loss": 0.031038106566196995,
+        "reconstruction": 0.02775987218085088,
+        "kl": 1.6391170715030872
+      },
+      {
+        "epoch": 40,
+        "loss": 0.028969727358535716,
+        "reconstruction": 0.025764699339082365,
+        "kl": 1.6025138591465198
+      },
+      {
+        "epoch": 50,
+        "loss": 0.027781987562775612,
+        "reconstruction": 0.024649075771632948,
+        "kl": 1.5664558222419338
+      },
+      {
+        "epoch": 60,
+        "loss": 0.02552880082083376,
+        "reconstruction": 0.022447115202483377,
+        "kl": 1.5408428091751902
+      },
+      {
+        "epoch": 70,
+        "loss": 0.024787755192894684,
+        "reconstruction": 0.021764075285510012,
+        "kl": 1.511839891734876
+      },
+      {
+        "epoch": 80,
+        "loss": 0.023396790125652364,
+        "reconstruction": 0.020394970221739066,
+        "kl": 1.5009097990236784
+      },
+      {
+        "epoch": 90,
+        "loss": 0.023137717752864485,
+        "reconstruction": 0.020228930798016097,
+        "kl": 1.4543934495825517
+      },
+      {
+        "epoch": 100,
+        "loss": 0.021322420651191158,
+        "reconstruction": 0.018424666535697486,
+        "kl": 1.4488770146118968
+      }
+    ]
+  },
+  "scenarios": {
+    "random_20_percent": {
+      "validation_count": 15566,
+      "test_count": 19230,
+      "calibration": {
+        "quantile": 0.9,
+        "global_width": 0.9666056632995605,
+        "cell_widths": {
+          "1": 1.4749812602996824,
+          "3": 1.612547874450687,
+          "13": 1.646829795837397,
+          "18": 0.7371881008148196,
+          "22": 0.14267204999923702,
+          "12": 0.14874434471130377,
+          "19": 0.6062571883201601,
+          "20": 5.923704147338867,
+          "21": 1.5189535140991226,
+          "24": 0.5524964332580566,
+          "8": 1.6445321083068807,
+          "10": 2.522362518310547,
+          "11": 0.34863815307617185,
+          "4": 0.5035066366195682,
+          "9": 0.6044385194778443,
+          "17": 0.10421660542488113,
+          "23": 1.8200187683105469,
+          "16": 0.5685817718505858,
+          "14": 0.4714916944503784,
+          "5": 6.811216354370117,
+          "15": 1.7495651245117188,
+          "2": 0.13856209516525267,
+          "0": 3.8317947387695312,
+          "6": 1.0374109268188478,
+          "7": 0.25008502006530825
+        },
+        "spread_scale": 0.6237143841278439,
+        "validation_count": 15566
+      },
+      "regime_metrics": {
+        "high_spot_move": {
+          "normal": {
+            "count": 16340,
+            "included_surfaces": 3268,
+            "point_mae": 0.528009712346003,
+            "point_rmse": 1.398855341630382,
+            "global_residual_interval": {
+              "coverage": 0.8814565483476132,
+              "average_width": 1.933211326599121
+            },
+            "cell_residual_interval": {
+              "coverage": 0.8945532435740514,
+              "average_width": 2.9232513277833636
+            },
+            "spread_scaled_interval": {
+              "coverage": 0.8624235006119951,
+              "average_width": 1.7573866555370141
+            }
+          },
+          "stressed": {
+            "count": 2890,
+            "included_surfaces": 578,
+            "point_mae": 0.22455896304801082,
+            "point_rmse": 0.43719442847875895,
+            "global_residual_interval": {
+              "coverage": 0.9629757785467128,
+              "average_width": 1.933211326599121
+            },
+            "cell_residual_interval": {
+              "coverage": 0.9871972318339101,
+              "average_width": 2.8927187426568524
+            },
+            "spread_scaled_interval": {
+              "coverage": 0.8972318339100346,
+              "average_width": 1.3167214921023656
+            }
+          }
+        },
+        "wide_vol_spread": {
+          "normal": {
+            "count": 14365,
+            "included_surfaces": 2873,
+            "point_mae": 0.2104289421421731,
+            "point_rmse": 0.4068054132711226,
+            "global_residual_interval": {
+              "coverage": 0.9662373825269753,
+              "average_width": 1.933211326599121
+            },
+            "cell_residual_interval": {
+              "coverage": 0.9906717716672467,
+              "average_width": 2.914110769169209
+            },
+            "spread_scaled_interval": {
+              "coverage": 0.8998955795335886,
+              "average_width": 1.2521831514513833
+            }
+          },
+          "stressed": {
+            "count": 4865,
+            "included_surfaces": 973,
+            "point_mae": 1.285476330744116,
+            "point_rmse": 2.4894089952342306,
+            "global_residual_interval": {
+              "coverage": 0.6795477903391572,
+              "average_width": 1.933211326599121
+            },
+            "cell_residual_interval": {
+              "coverage": 0.665775950668037,
+              "average_width": 2.93210332233147
+            },
+            "spread_scaled_interval": {
+              "coverage": 0.7724563206577595,
+              "average_width": 2.9873406152212674
+            }
+          }
+        },
+        "lower_liquidity_pair": {
+          "normal": {
+            "count": 9615,
+            "included_surfaces": 1923,
+            "point_mae": 0.22934265283778604,
+            "point_rmse": 0.41233097102475963,
+            "global_residual_interval": {
+              "coverage": 0.9615184607384295,
+              "average_width": 1.933211326599121
+            },
+            "cell_residual_interval": {
+              "coverage": 0.9879355174206969,
+              "average_width": 2.939189353328987
+            },
+            "spread_scaled_interval": {
+              "coverage": 0.8568902756110245,
+              "average_width": 0.9381176797295148
+            }
+          },
+          "stressed": {
+            "count": 9615,
+            "included_surfaces": 1923,
+            "point_mae": 0.735467966292993,
+            "point_rmse": 1.7924476332714416,
+            "global_residual_interval": {
+              "coverage": 0.8258970358814353,
+              "average_width": 1.933211326599121
+            },
+            "cell_residual_interval": {
+              "coverage": 0.8290171606864275,
+              "average_width": 2.898136061362478
+            },
+            "spread_scaled_interval": {
+              "coverage": 0.8784191367654706,
+              "average_width": 2.4442040117578023
+            }
+          }
+        }
+      }
+    },
+    "full_3m_tenor": {
+      "validation_count": 15566,
+      "test_count": 19230,
+      "calibration": {
+        "quantile": 0.9,
+        "global_width": 0.7113704681396484,
+        "cell_widths": {
+          "10": 3.09420356750488,
+          "11": 0.37399129867553665,
+          "12": 0.11036086827516556,
+          "13": 1.2604217529296888,
+          "14": 0.5408443212509157
+        },
+        "spread_scale": 0.49702411563995413,
+        "validation_count": 15566
+      },
+      "regime_metrics": {
+        "high_spot_move": {
+          "normal": {
+            "count": 16340,
+            "included_surfaces": 3268,
+            "point_mae": 0.41238736687686905,
+            "point_rmse": 1.0637942643702958,
+            "global_residual_interval": {
+              "coverage": 0.8847613219094247,
+              "average_width": 1.4227409362792969
+            },
+            "cell_residual_interval": {
+              "coverage": 0.8924112607099143,
+              "average_width": 2.1519287234544002
+            },
+            "spread_scaled_interval": {
+              "coverage": 0.8438188494492044,
+              "average_width": 1.0533355424571766
+            }
+          },
+          "stressed": {
+            "count": 2890,
+            "included_surfaces": 578,
+            "point_mae": 0.16410186238567567,
+            "point_rmse": 0.29190134795710504,
+            "global_residual_interval": {
+              "coverage": 0.9588235294117647,
+              "average_width": 1.4227409362792969
+            },
+            "cell_residual_interval": {
+              "coverage": 0.9858131487889273,
+              "average_width": 2.1519287234544695
+            },
+            "spread_scaled_interval": {
+              "coverage": 0.8612456747404844,
+              "average_width": 0.72338334356523
+            }
+          }
+        },
+        "wide_vol_spread": {
+          "normal": {
+            "count": 14365,
+            "included_surfaces": 2873,
+            "point_mae": 0.1467692783875848,
+            "point_rmse": 0.24995104522294095,
+            "global_residual_interval": {
+              "coverage": 0.9738252697528715,
+              "average_width": 1.4227409362792969
+            },
+            "cell_residual_interval": {
+              "coverage": 0.9943612948137835,
+              "average_width": 2.151928723454466
+            },
+            "spread_scaled_interval": {
+              "coverage": 0.8810302819352593,
+              "average_width": 0.7042390572759982
+            }
+          },
+          "stressed": {
+            "count": 4865,
+            "included_surfaces": 973,
+            "point_mae": 1.0491928618756396,
+            "point_rmse": 1.914948023438757,
+            "global_residual_interval": {
+              "coverage": 0.665775950668037,
+              "average_width": 1.4227409362792969
+            },
+            "cell_residual_interval": {
+              "coverage": 0.6468653648509763,
+              "average_width": 2.1519287234545263
+            },
+            "spread_scaled_interval": {
+              "coverage": 0.7442959917780062,
+              "average_width": 1.8881164581467018
+            }
+          }
+        },
+        "lower_liquidity_pair": {
+          "normal": {
+            "count": 9615,
+            "included_surfaces": 1923,
+            "point_mae": 0.16485248013756476,
+            "point_rmse": 0.2749872984134345,
+            "global_residual_interval": {
+              "coverage": 0.9658866354654186,
+              "average_width": 1.4227409362792969
+            },
+            "cell_residual_interval": {
+              "coverage": 0.9911596463858554,
+              "average_width": 2.1519287234545335
+            },
+            "spread_scaled_interval": {
+              "coverage": 0.8196567862714509,
+              "average_width": 0.5198923944688869
+            }
+          },
+          "stressed": {
+            "count": 9615,
+            "included_surfaces": 1923,
+            "point_mae": 0.5852945772792468,
+            "point_rmse": 1.368635931553357,
+            "global_residual_interval": {
+              "coverage": 0.8258970358814353,
+              "average_width": 1.4227409362792969
+            },
+            "cell_residual_interval": {
+              "coverage": 0.821736869474779,
+              "average_width": 2.1519287234545335
+            },
+            "spread_scaled_interval": {
+              "coverage": 0.8732189287571502,
+              "average_width": 1.4876042905704916
+            }
+          }
+        }
+      }
+    },
+    "full_10d_wings": {
+      "validation_count": 31030,
+      "test_count": 38460,
+      "calibration": {
+        "quantile": 0.9,
+        "global_width": 1.0082625389099127,
+        "cell_widths": {
+          "3": 2.0536354064941404,
+          "4": 0.5779264450073247,
+          "8": 2.3423736572265628,
+          "9": 0.7209261417388919,
+          "13": 1.9365497589111331,
+          "14": 0.6748453140258792,
+          "18": 0.7945438385009774,
+          "19": 0.646919083595278,
+          "23": 1.5462387084960945,
+          "24": 0.7357957839965823
+        },
+        "spread_scale": 0.6774438356356922,
+        "validation_count": 31030
+      },
+      "regime_metrics": {
+        "high_spot_move": {
+          "normal": {
+            "count": 32680,
+            "included_surfaces": 3268,
+            "point_mae": 0.561923939074735,
+            "point_rmse": 1.2068360270664455,
+            "global_residual_interval": {
+              "coverage": 0.8626070991432069,
+              "average_width": 2.016525077821032
+            },
+            "cell_residual_interval": {
+              "coverage": 0.8930232558139535,
+              "average_width": 2.4059508275980237
+            },
+            "spread_scaled_interval": {
+              "coverage": 0.8644736842105263,
+              "average_width": 2.294049952026834
+            }
+          },
+          "stressed": {
+            "count": 5780,
+            "included_surfaces": 578,
+            "point_mae": 0.23140754947812653,
+            "point_rmse": 0.35838278700742404,
+            "global_residual_interval": {
+              "coverage": 0.9711072664359861,
+              "average_width": 2.0165250778196984
+            },
+            "cell_residual_interval": {
+              "coverage": 0.9852941176470589,
+              "average_width": 2.4059508275987564
+            },
+            "spread_scaled_interval": {
+              "coverage": 0.918166089965398,
+              "average_width": 1.6963170193252883
+            }
+          }
+        },
+        "wide_vol_spread": {
+          "normal": {
+            "count": 28730,
+            "included_surfaces": 2873,
+            "point_mae": 0.23326635549658262,
+            "point_rmse": 0.35712489298128675,
+            "global_residual_interval": {
+              "coverage": 0.9665506439262095,
+              "average_width": 2.016525077820798
+            },
+            "cell_residual_interval": {
+              "coverage": 0.9900800556909154,
+              "average_width": 2.4059508275977883
+            },
+            "spread_scaled_interval": {
+              "coverage": 0.9039679777236338,
+              "average_width": 1.6155682028228422
+            }
+          },
+          "stressed": {
+            "count": 9730,
+            "included_surfaces": 973,
+            "point_mae": 1.3360192776494444,
+            "point_rmse": 2.1427736825275785,
+            "global_residual_interval": {
+              "coverage": 0.6201438848920864,
+              "average_width": 2.016525077819454
+            },
+            "cell_residual_interval": {
+              "coverage": 0.6612538540596095,
+              "average_width": 2.40595082759864
+            },
+            "spread_scaled_interval": {
+              "coverage": 0.7797533401849949,
+              "average_width": 3.9423422751117507
+            }
+          }
+        },
+        "lower_liquidity_pair": {
+          "normal": {
+            "count": 19230,
+            "included_surfaces": 1923,
+            "point_mae": 0.2835929819297247,
+            "point_rmse": 0.4186148135803917,
+            "global_residual_interval": {
+              "coverage": 0.950390015600624,
+              "average_width": 2.0165250778198414
+            },
+            "cell_residual_interval": {
+              "coverage": 0.9855434217368695,
+              "average_width": 2.4059508275980384
+            },
+            "spread_scaled_interval": {
+              "coverage": 0.8524700988039522,
+              "average_width": 1.227249925988084
+            }
+          },
+          "stressed": {
+            "count": 19230,
+            "included_surfaces": 1923,
+            "point_mae": 0.7409109164033961,
+            "point_rmse": 1.52921675477675,
+            "global_residual_interval": {
+              "coverage": 0.807436297451898,
+              "average_width": 2.0165250778198414
+            },
+            "cell_residual_interval": {
+              "coverage": 0.8282371294851794,
+              "average_width": 2.4059508275980384
+            },
+            "spread_scaled_interval": {
+              "coverage": 0.8926157046281852,
+              "average_width": 3.181188181341005
+            }
+          }
+        }
+      }
+    }
+  }
+}

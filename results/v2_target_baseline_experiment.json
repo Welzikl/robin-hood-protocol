@@ -1,0 +1,1004 @@
+{
+  "dataset": "v2",
+  "target_pairs": [
+    "USDCNH",
+    "USDHUF",
+    "USDMXN",
+    "USDPLN",
+    "USDTRY",
+    "USDZAR"
+  ],
+  "target_test_count": 3846,
+  "split_counts": {
+    "train": 40703,
+    "validation": 6760,
+    "test": 8333
+  },
+  "experiments": {
+    "cell_mean": {
+      "random_20_percent": {
+        "count": 19230,
+        "mae": 1.7555341224391992,
+        "rmse": 3.157602039185601,
+        "spread_observations": 19230,
+        "mean_abs_error_to_spread": 1.5726763516106632,
+        "within_spread_rate": 0.515600624024961,
+        "within_half_spread_rate": 0.32298491939677587,
+        "by_pair": {
+          "USDCNH": {
+            "count": 3205,
+            "mae": 0.894946225305869,
+            "rmse": 1.2022888539267036,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 2.3280524998494636,
+            "within_spread_rate": 0.3700468018720749,
+            "within_half_spread_rate": 0.2546021840873635
+          },
+          "USDHUF": {
+            "count": 3205,
+            "mae": 1.0661351170629423,
+            "rmse": 1.4129284478279378,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.817766421040003,
+            "within_spread_rate": 0.6911076443057722,
+            "within_half_spread_rate": 0.3950078003120125
+          },
+          "USDMXN": {
+            "count": 3205,
+            "mae": 1.014349788169949,
+            "rmse": 1.7438735229728148,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 1.2036318249053015,
+            "within_spread_rate": 0.5959438377535101,
+            "within_half_spread_rate": 0.39344773790951637
+          },
+          "USDPLN": {
+            "count": 3205,
+            "mae": 1.1517154896115689,
+            "rmse": 1.6436112845727877,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 1.0310711776118204,
+            "within_spread_rate": 0.646801872074883,
+            "within_half_spread_rate": 0.43182527301092044
+          },
+          "USDTRY": {
+            "count": 3205,
+            "mae": 4.680960902431761,
+            "rmse": 6.721147686959482,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 1.6324169275642304,
+            "within_spread_rate": 0.4736349453978159,
+            "within_half_spread_rate": 0.2677067082683307
+          },
+          "USDZAR": {
+            "count": 3205,
+            "mae": 1.7250972120531354,
+            "rmse": 2.3376183160291926,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 2.423119258693177,
+            "within_spread_rate": 0.31606864274570984,
+            "within_half_spread_rate": 0.1953198127925117
+          }
+        }
+      },
+      "full_3m_tenor": {
+        "count": 19230,
+        "mae": 1.7114504665045296,
+        "rmse": 3.319220771382214,
+        "spread_observations": 19230,
+        "mean_abs_error_to_spread": 1.6575594235517108,
+        "within_spread_rate": 0.5037961518460738,
+        "within_half_spread_rate": 0.28065522620904837,
+        "by_pair": {
+          "USDCNH": {
+            "count": 3205,
+            "mae": 0.8679229704472973,
+            "rmse": 1.1598252150131807,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 2.5269132885290606,
+            "within_spread_rate": 0.33322932917316694,
+            "within_half_spread_rate": 0.21528861154446177
+          },
+          "USDHUF": {
+            "count": 3205,
+            "mae": 0.9892253580648663,
+            "rmse": 1.2743824597827071,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.8541534389505847,
+            "within_spread_rate": 0.696411856474259,
+            "within_half_spread_rate": 0.3201248049921997
+          },
+          "USDMXN": {
+            "count": 3205,
+            "mae": 0.7983194721705774,
+            "rmse": 1.3292768374129162,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 1.1442327074536542,
+            "within_spread_rate": 0.6820592823712949,
+            "within_half_spread_rate": 0.43650546021840875
+          },
+          "USDPLN": {
+            "count": 3205,
+            "mae": 1.1115977283677705,
+            "rmse": 1.5697630305323245,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 1.1035792669662505,
+            "within_spread_rate": 0.615600624024961,
+            "within_half_spread_rate": 0.37254290171606863
+          },
+          "USDTRY": {
+            "count": 3205,
+            "mae": 4.8616769248285125,
+            "rmse": 7.376934919966039,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 1.8216965294678402,
+            "within_spread_rate": 0.46583463338533543,
+            "within_half_spread_rate": 0.3076443057722309
+          },
+          "USDZAR": {
+            "count": 3205,
+            "mae": 1.6399603451481481,
+            "rmse": 2.117501427613665,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 2.494781309942898,
+            "within_spread_rate": 0.2296411856474259,
+            "within_half_spread_rate": 0.03182527301092044
+          }
+        }
+      },
+      "full_10d_wings": {
+        "count": 38460,
+        "mae": 2.159057563757734,
+        "rmse": 4.093666615824186,
+        "spread_observations": 38460,
+        "mean_abs_error_to_spread": 1.5770327482493995,
+        "within_spread_rate": 0.5131045241809672,
+        "within_half_spread_rate": 0.29869994799791993,
+        "by_pair": {
+          "USDCNH": {
+            "count": 6410,
+            "mae": 1.1576304993953248,
+            "rmse": 1.4875641385260112,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 2.6112774087686277,
+            "within_spread_rate": 0.2917316692667707,
+            "within_half_spread_rate": 0.1859594383775351
+          },
+          "USDHUF": {
+            "count": 6410,
+            "mae": 1.1357550112502235,
+            "rmse": 1.3923421545224068,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.7766682868937514,
+            "within_spread_rate": 0.7316692667706708,
+            "within_half_spread_rate": 0.3609984399375975
+          },
+          "USDMXN": {
+            "count": 6410,
+            "mae": 0.840069436706891,
+            "rmse": 1.1902565790557298,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.9561299946216608,
+            "within_spread_rate": 0.6117004680187208,
+            "within_half_spread_rate": 0.40546021840873636
+          },
+          "USDPLN": {
+            "count": 6410,
+            "mae": 0.9143835708637055,
+            "rmse": 1.2157305808248073,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.7395348261331055,
+            "within_spread_rate": 0.781591263650546,
+            "within_half_spread_rate": 0.4457098283931357
+          },
+          "USDTRY": {
+            "count": 6410,
+            "mae": 7.138336274037252,
+            "rmse": 9.38301748463907,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 2.168413101741408,
+            "within_spread_rate": 0.3399375975039002,
+            "within_half_spread_rate": 0.16957878315132605
+          },
+          "USDZAR": {
+            "count": 6410,
+            "mae": 1.7681705902929907,
+            "rmse": 2.3369736287371246,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 2.210172871337876,
+            "within_spread_rate": 0.321996879875195,
+            "within_half_spread_rate": 0.22449297971918877
+          }
+        }
+      }
+    },
+    "tenor_interpolation": {
+      "random_20_percent": {
+        "count": 19230,
+        "mae": 0.40396339920263413,
+        "rmse": 1.039075491975388,
+        "spread_observations": 19230,
+        "mean_abs_error_to_spread": 0.27958036529289076,
+        "within_spread_rate": 0.9403016120644826,
+        "within_half_spread_rate": 0.8549661986479459,
+        "by_pair": {
+          "USDCNH": {
+            "count": 3205,
+            "mae": 0.1769217368694753,
+            "rmse": 0.3321052826076623,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.45496630610251215,
+            "within_spread_rate": 0.8633385335413416,
+            "within_half_spread_rate": 0.7444617784711388
+          },
+          "USDHUF": {
+            "count": 3205,
+            "mae": 0.24429771190847643,
+            "rmse": 0.4582480985488385,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.15756256075524674,
+            "within_spread_rate": 0.9893915756630265,
+            "within_half_spread_rate": 0.940405616224649
+          },
+          "USDMXN": {
+            "count": 3205,
+            "mae": 0.30371253250130026,
+            "rmse": 0.7534320636107326,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.28599794271325774,
+            "within_spread_rate": 0.9450858034321373,
+            "within_half_spread_rate": 0.8514820592823713
+          },
+          "USDPLN": {
+            "count": 3205,
+            "mae": 0.1816709568382733,
+            "rmse": 0.32253719231798234,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.13715879992497795,
+            "within_spread_rate": 0.9937597503900156,
+            "within_half_spread_rate": 0.960374414976599
+          },
+          "USDTRY": {
+            "count": 3205,
+            "mae": 1.3039089963598567,
+            "rmse": 2.293969125661131,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.42307216192909247,
+            "within_spread_rate": 0.8942277691107644,
+            "within_half_spread_rate": 0.7425897035881436
+          },
+          "USDZAR": {
+            "count": 3205,
+            "mae": 0.21326846073843042,
+            "rmse": 0.4730724735092817,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.21872442033225278,
+            "within_spread_rate": 0.95600624024961,
+            "within_half_spread_rate": 0.8904836193447738
+          }
+        }
+      },
+      "full_3m_tenor": {
+        "count": 19230,
+        "mae": 0.16527407696307947,
+        "rmse": 0.3554903269055281,
+        "spread_observations": 19230,
+        "mean_abs_error_to_spread": 0.1469508084219951,
+        "within_spread_rate": 0.9852314092563702,
+        "within_half_spread_rate": 0.9412896515860635,
+        "by_pair": {
+          "USDCNH": {
+            "count": 3205,
+            "mae": 0.0580963338533532,
+            "rmse": 0.11073766760114317,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.1769585946278785,
+            "within_spread_rate": 0.971606864274571,
+            "within_half_spread_rate": 0.9101404056162247
+          },
+          "USDHUF": {
+            "count": 3205,
+            "mae": 0.11527847113884558,
+            "rmse": 0.2513623410956001,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.09356614020073081,
+            "within_spread_rate": 0.9900156006240249,
+            "within_half_spread_rate": 0.97597503900156
+          },
+          "USDMXN": {
+            "count": 3205,
+            "mae": 0.13251770670826807,
+            "rmse": 0.2399567138308082,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.186225607664719,
+            "within_spread_rate": 0.9875195007800313,
+            "within_half_spread_rate": 0.934789391575663
+          },
+          "USDPLN": {
+            "count": 3205,
+            "mae": 0.05596060842433635,
+            "rmse": 0.09031731147000568,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.05535739626730136,
+            "within_spread_rate": 1.0,
+            "within_half_spread_rate": 0.9990639625585024
+          },
+          "USDTRY": {
+            "count": 3205,
+            "mae": 0.5194980499219962,
+            "rmse": 0.7474913286245902,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.21439795937749423,
+            "within_spread_rate": 0.9946957878315132,
+            "within_half_spread_rate": 0.8942277691107644
+          },
+          "USDZAR": {
+            "count": 3205,
+            "mae": 0.11029329173166906,
+            "rmse": 0.24148426441695564,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.15519915239384305,
+            "within_spread_rate": 0.9675507020280811,
+            "within_half_spread_rate": 0.9335413416536662
+          }
+        }
+      },
+      "full_10d_wings": {
+        "count": 38460,
+        "mae": 2.159057563757734,
+        "rmse": 4.093666615824186,
+        "spread_observations": 38460,
+        "mean_abs_error_to_spread": 1.5770327482493995,
+        "within_spread_rate": 0.5131045241809672,
+        "within_half_spread_rate": 0.29869994799791993,
+        "by_pair": {
+          "USDCNH": {
+            "count": 6410,
+            "mae": 1.1576304993953248,
+            "rmse": 1.4875641385260112,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 2.6112774087686277,
+            "within_spread_rate": 0.2917316692667707,
+            "within_half_spread_rate": 0.1859594383775351
+          },
+          "USDHUF": {
+            "count": 6410,
+            "mae": 1.1357550112502235,
+            "rmse": 1.3923421545224068,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.7766682868937514,
+            "within_spread_rate": 0.7316692667706708,
+            "within_half_spread_rate": 0.3609984399375975
+          },
+          "USDMXN": {
+            "count": 6410,
+            "mae": 0.840069436706891,
+            "rmse": 1.1902565790557298,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.9561299946216608,
+            "within_spread_rate": 0.6117004680187208,
+            "within_half_spread_rate": 0.40546021840873636
+          },
+          "USDPLN": {
+            "count": 6410,
+            "mae": 0.9143835708637055,
+            "rmse": 1.2157305808248073,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.7395348261331055,
+            "within_spread_rate": 0.781591263650546,
+            "within_half_spread_rate": 0.4457098283931357
+          },
+          "USDTRY": {
+            "count": 6410,
+            "mae": 7.138336274037252,
+            "rmse": 9.38301748463907,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 2.168413101741408,
+            "within_spread_rate": 0.3399375975039002,
+            "within_half_spread_rate": 0.16957878315132605
+          },
+          "USDZAR": {
+            "count": 6410,
+            "mae": 1.7681705902929907,
+            "rmse": 2.3369736287371246,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 2.210172871337876,
+            "within_spread_rate": 0.321996879875195,
+            "within_half_spread_rate": 0.22449297971918877
+          }
+        }
+      }
+    },
+    "dealer_sticky": {
+      "random_20_percent": {
+        "count": 19230,
+        "mae": 0.08530147122551762,
+        "rmse": 0.277608950783556,
+        "spread_observations": 19230,
+        "mean_abs_error_to_spread": 0.07170771023513707,
+        "within_spread_rate": 0.9962558502340093,
+        "within_half_spread_rate": 0.9829953198127925,
+        "by_pair": {
+          "USDCNH": {
+            "count": 3205,
+            "mae": 0.04972354394175714,
+            "rmse": 0.11649112921356938,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.11255936726307672,
+            "within_spread_rate": 0.9903276131045242,
+            "within_half_spread_rate": 0.9591263650546021
+          },
+          "USDHUF": {
+            "count": 3205,
+            "mae": 0.058617524700987717,
+            "rmse": 0.1703539435872474,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.034552338998673736,
+            "within_spread_rate": 0.9993759750390016,
+            "within_half_spread_rate": 0.997191887675507
+          },
+          "USDMXN": {
+            "count": 3205,
+            "mae": 0.1022817212688504,
+            "rmse": 0.25229163379821506,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.1014297466288992,
+            "within_spread_rate": 0.9934477379095163,
+            "within_half_spread_rate": 0.9697347893915756
+          },
+          "USDPLN": {
+            "count": 3205,
+            "mae": 0.05695625325012968,
+            "rmse": 0.13942862839007736,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.04114805837551635,
+            "within_spread_rate": 0.9990639625585024,
+            "within_half_spread_rate": 0.995631825273011
+          },
+          "USDTRY": {
+            "count": 3205,
+            "mae": 0.16777658606344245,
+            "rmse": 0.5345580114976594,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.05979804807007104,
+            "within_spread_rate": 0.9990639625585024,
+            "within_half_spread_rate": 0.9968798751950078
+          },
+          "USDZAR": {
+            "count": 3205,
+            "mae": 0.07645319812792489,
+            "rmse": 0.2257566156152754,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.08075870207458247,
+            "within_spread_rate": 0.9962558502340093,
+            "within_half_spread_rate": 0.9794071762870514
+          }
+        }
+      },
+      "full_3m_tenor": {
+        "count": 19230,
+        "mae": 0.05396921476859173,
+        "rmse": 0.1341983975976297,
+        "spread_observations": 19230,
+        "mean_abs_error_to_spread": 0.060147568091607706,
+        "within_spread_rate": 0.9977639105564222,
+        "within_half_spread_rate": 0.9890795631825273,
+        "by_pair": {
+          "USDCNH": {
+            "count": 3205,
+            "mae": 0.03139664586583413,
+            "rmse": 0.07249407891793057,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.09618077079478085,
+            "within_spread_rate": 0.9950078003120125,
+            "within_half_spread_rate": 0.9728549141965679
+          },
+          "USDHUF": {
+            "count": 3205,
+            "mae": 0.03945046801872027,
+            "rmse": 0.12758774625848607,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.03131771811532375,
+            "within_spread_rate": 0.9990639625585024,
+            "within_half_spread_rate": 0.9978159126365055
+          },
+          "USDMXN": {
+            "count": 3205,
+            "mae": 0.059306318252730174,
+            "rmse": 0.1701174620866004,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.08269064196860157,
+            "within_spread_rate": 0.9968798751950078,
+            "within_half_spread_rate": 0.9819032761310452
+          },
+          "USDPLN": {
+            "count": 3205,
+            "mae": 0.03342472698907924,
+            "rmse": 0.073600487345666,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.03250441676863336,
+            "within_spread_rate": 0.9996879875195008,
+            "within_half_spread_rate": 0.9978159126365055
+          },
+          "USDTRY": {
+            "count": 3205,
+            "mae": 0.11346723868954743,
+            "rmse": 0.2016858470951464,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.050166760437404576,
+            "within_spread_rate": 0.9981279251170047,
+            "within_half_spread_rate": 0.9959438377535101
+          },
+          "USDZAR": {
+            "count": 3205,
+            "mae": 0.046769890795631625,
+            "rmse": 0.10717775641595963,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.06802510046490164,
+            "within_spread_rate": 0.9978159126365055,
+            "within_half_spread_rate": 0.9881435257410296
+          }
+        }
+      },
+      "full_10d_wings": {
+        "count": 38460,
+        "mae": 0.10941426417056667,
+        "rmse": 0.24781556701235374,
+        "spread_observations": 38460,
+        "mean_abs_error_to_spread": 0.0938227470602547,
+        "within_spread_rate": 0.9957878315132606,
+        "within_half_spread_rate": 0.981201248049922,
+        "by_pair": {
+          "USDCNH": {
+            "count": 6410,
+            "mae": 0.06728991159646379,
+            "rmse": 0.1313633751220367,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.14259204864425606,
+            "within_spread_rate": 0.9911076443057723,
+            "within_half_spread_rate": 0.9602184087363494
+          },
+          "USDHUF": {
+            "count": 6410,
+            "mae": 0.08603671346853911,
+            "rmse": 0.14832275666803732,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.05722333116218426,
+            "within_spread_rate": 0.9993759750390016,
+            "within_half_spread_rate": 0.995631825273011
+          },
+          "USDMXN": {
+            "count": 6410,
+            "mae": 0.11780477379095133,
+            "rmse": 0.22391157612866727,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.12734280375077014,
+            "within_spread_rate": 0.9926677067082683,
+            "within_half_spread_rate": 0.9655226209048362
+          },
+          "USDPLN": {
+            "count": 6410,
+            "mae": 0.0715045761830474,
+            "rmse": 0.1163496165557252,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.05655875363849571,
+            "within_spread_rate": 0.9990639625585024,
+            "within_half_spread_rate": 0.9950078003120125
+          },
+          "USDTRY": {
+            "count": 6410,
+            "mae": 0.2193567342693713,
+            "rmse": 0.4865754812920879,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.07152552386180737,
+            "within_spread_rate": 0.9975039001560062,
+            "within_half_spread_rate": 0.990795631825273
+          },
+          "USDZAR": {
+            "count": 6410,
+            "mae": 0.09449287571502807,
+            "rmse": 0.16967624719198152,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.10769402130401355,
+            "within_spread_rate": 0.9950078003120125,
+            "within_half_spread_rate": 0.9800312012480499
+          }
+        }
+      }
+    },
+    "previous_surface": {
+      "random_20_percent": {
+        "count": 19230,
+        "mae": 0.10020837233489772,
+        "rmse": 0.37216746645685866,
+        "spread_observations": 19230,
+        "mean_abs_error_to_spread": 0.07887952562601837,
+        "within_spread_rate": 0.9951118044721788,
+        "within_half_spread_rate": 0.9787831513260531,
+        "by_pair": {
+          "USDCNH": {
+            "count": 3205,
+            "mae": 0.058234009360373436,
+            "rmse": 0.14127366644195735,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.11965902844211883,
+            "within_spread_rate": 0.988767550702028,
+            "within_half_spread_rate": 0.9553822152886116
+          },
+          "USDHUF": {
+            "count": 3205,
+            "mae": 0.07356474258970286,
+            "rmse": 0.1932037352313148,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.04348532450630503,
+            "within_spread_rate": 0.9990639625585024,
+            "within_half_spread_rate": 0.9953198127925117
+          },
+          "USDMXN": {
+            "count": 3205,
+            "mae": 0.11306146645865683,
+            "rmse": 0.2827645845865651,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.10339253853096395,
+            "within_spread_rate": 0.9915756630265211,
+            "within_half_spread_rate": 0.9650546021840873
+          },
+          "USDPLN": {
+            "count": 3205,
+            "mae": 0.07216692667706616,
+            "rmse": 0.18508231714176443,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.05217518255380178,
+            "within_spread_rate": 0.9978159126365055,
+            "within_half_spread_rate": 0.9906396255850234
+          },
+          "USDTRY": {
+            "count": 3205,
+            "mae": 0.1983962558502331,
+            "rmse": 0.770104509490898,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.06969404041370612,
+            "within_spread_rate": 0.9965678627145086,
+            "within_half_spread_rate": 0.9906396255850234
+          },
+          "USDZAR": {
+            "count": 3205,
+            "mae": 0.08582683307332176,
+            "rmse": 0.257863484121073,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.0848710393092172,
+            "within_spread_rate": 0.9968798751950078,
+            "within_half_spread_rate": 0.9756630265210608
+          }
+        }
+      },
+      "full_3m_tenor": {
+        "count": 19230,
+        "mae": 0.07801882475299289,
+        "rmse": 0.2296849064833186,
+        "spread_observations": 19230,
+        "mean_abs_error_to_spread": 0.08509204749154262,
+        "within_spread_rate": 0.9951118044721788,
+        "within_half_spread_rate": 0.9765990639625585,
+        "by_pair": {
+          "USDCNH": {
+            "count": 3205,
+            "mae": 0.043769110764430116,
+            "rmse": 0.1021685310472338,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.1300241874218685,
+            "within_spread_rate": 0.988767550702028,
+            "within_half_spread_rate": 0.9494539781591264
+          },
+          "USDHUF": {
+            "count": 3205,
+            "mae": 0.060962558502339316,
+            "rmse": 0.13020185636516876,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.04886950940355299,
+            "within_spread_rate": 0.9990639625585024,
+            "within_half_spread_rate": 0.9940717628705148
+          },
+          "USDMXN": {
+            "count": 3205,
+            "mae": 0.08363556942277595,
+            "rmse": 0.1905794943894727,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.11436543686912165,
+            "within_spread_rate": 0.9918876755070203,
+            "within_half_spread_rate": 0.9575663026521061
+          },
+          "USDPLN": {
+            "count": 3205,
+            "mae": 0.05691263650545935,
+            "rmse": 0.13507581507817396,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.054911517803124435,
+            "within_spread_rate": 0.9984399375975039,
+            "within_half_spread_rate": 0.9921996879875195
+          },
+          "USDTRY": {
+            "count": 3205,
+            "mae": 0.15660374414976477,
+            "rmse": 0.4600097545258902,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.06610278136160519,
+            "within_spread_rate": 0.9968798751950078,
+            "within_half_spread_rate": 0.987207488299532
+          },
+          "USDZAR": {
+            "count": 3205,
+            "mae": 0.06622932917316621,
+            "rmse": 0.15154211197046227,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.09627885208998678,
+            "within_spread_rate": 0.995631825273011,
+            "within_half_spread_rate": 0.9790951638065523
+          }
+        }
+      },
+      "full_10d_wings": {
+        "count": 38460,
+        "mae": 0.08712402496100981,
+        "rmse": 0.25067168867228373,
+        "spread_observations": 38460,
+        "mean_abs_error_to_spread": 0.06188644832135907,
+        "within_spread_rate": 0.9979719188767551,
+        "within_half_spread_rate": 0.9888715548621945,
+        "by_pair": {
+          "USDCNH": {
+            "count": 6410,
+            "mae": 0.052627925117002344,
+            "rmse": 0.12475095315071684,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.09672568212390106,
+            "within_spread_rate": 0.9943837753510141,
+            "within_half_spread_rate": 0.9714508580343214
+          },
+          "USDHUF": {
+            "count": 6410,
+            "mae": 0.054122464898594506,
+            "rmse": 0.11129055204049922,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.032549145615960826,
+            "within_spread_rate": 1.0,
+            "within_half_spread_rate": 0.999219968798752
+          },
+          "USDMXN": {
+            "count": 6410,
+            "mae": 0.08923400936037261,
+            "rmse": 0.20219280063134298,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.07661881611297636,
+            "within_spread_rate": 0.9973478939157566,
+            "within_half_spread_rate": 0.984399375975039
+          },
+          "USDPLN": {
+            "count": 6410,
+            "mae": 0.05041107644305625,
+            "rmse": 0.10996568213788394,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.03454148970149543,
+            "within_spread_rate": 0.9993759750390016,
+            "within_half_spread_rate": 0.9976599063962559
+          },
+          "USDTRY": {
+            "count": 6410,
+            "mae": 0.20352496099844072,
+            "rmse": 0.5186213460936855,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.06415858883497229,
+            "within_spread_rate": 0.9975039001560062,
+            "within_half_spread_rate": 0.9918876755070203
+          },
+          "USDZAR": {
+            "count": 6410,
+            "mae": 0.07282371294851596,
+            "rmse": 0.16470247486364362,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.066724967538847,
+            "within_spread_rate": 0.999219968798752,
+            "within_half_spread_rate": 0.9886115444617785
+          }
+        }
+      }
+    },
+    "pca_5_components": {
+      "random_20_percent": {
+        "count": 19230,
+        "mae": 0.4291317630668316,
+        "rmse": 0.9755560112133965,
+        "spread_observations": 19230,
+        "mean_abs_error_to_spread": 0.3321078855703696,
+        "within_spread_rate": 0.9273010920436817,
+        "within_half_spread_rate": 0.8081123244929798,
+        "by_pair": {
+          "USDCNH": {
+            "count": 3205,
+            "mae": 0.21803257592225575,
+            "rmse": 0.4190346785145716,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.5328693592389604,
+            "within_spread_rate": 0.8527301092043682,
+            "within_half_spread_rate": 0.7198127925117005
+          },
+          "USDHUF": {
+            "count": 3205,
+            "mae": 0.2457103160540877,
+            "rmse": 0.5438652664644014,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.15799378928096017,
+            "within_spread_rate": 0.9703588143525741,
+            "within_half_spread_rate": 0.9329173166926678
+          },
+          "USDMXN": {
+            "count": 3205,
+            "mae": 0.3464036455502185,
+            "rmse": 0.798931407445118,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.3625376702415613,
+            "within_spread_rate": 0.9263650546021841,
+            "within_half_spread_rate": 0.7725429017160687
+          },
+          "USDPLN": {
+            "count": 3205,
+            "mae": 0.20690574594047062,
+            "rmse": 0.38957997225864194,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.15724438298360557,
+            "within_spread_rate": 0.9847113884555382,
+            "within_half_spread_rate": 0.9326053042121685
+          },
+          "USDTRY": {
+            "count": 3205,
+            "mae": 1.297643179042967,
+            "rmse": 2.050563883032303,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.46927668377885456,
+            "within_spread_rate": 0.8833073322932917,
+            "within_half_spread_rate": 0.6636505460218409
+          },
+          "USDZAR": {
+            "count": 3205,
+            "mae": 0.26009511589098566,
+            "rmse": 0.4939650890898368,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.3127254278982799,
+            "within_spread_rate": 0.9463338533541341,
+            "within_half_spread_rate": 0.8271450858034322
+          }
+        }
+      },
+      "full_3m_tenor": {
+        "count": 19230,
+        "mae": 0.27436507213590383,
+        "rmse": 0.5840258785678883,
+        "spread_observations": 19230,
+        "mean_abs_error_to_spread": 0.2543129692232764,
+        "within_spread_rate": 0.9673426937077483,
+        "within_half_spread_rate": 0.8502860114404576,
+        "by_pair": {
+          "USDCNH": {
+            "count": 3205,
+            "mae": 0.10302543433119854,
+            "rmse": 0.17291013454828863,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.31744062264553885,
+            "within_spread_rate": 0.9647425897035882,
+            "within_half_spread_rate": 0.829641185647426
+          },
+          "USDHUF": {
+            "count": 3205,
+            "mae": 0.13209483110029868,
+            "rmse": 0.31407895811495845,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.10805924802521014,
+            "within_spread_rate": 0.9881435257410296,
+            "within_half_spread_rate": 0.97597503900156
+          },
+          "USDMXN": {
+            "count": 3205,
+            "mae": 0.2681163915655819,
+            "rmse": 0.3928256663173604,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.3803359321834627,
+            "within_spread_rate": 0.9519500780031201,
+            "within_half_spread_rate": 0.6839313572542902
+          },
+          "USDPLN": {
+            "count": 3205,
+            "mae": 0.10423424652940196,
+            "rmse": 0.1648267100919927,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.1082135448091073,
+            "within_spread_rate": 0.9987519500780031,
+            "within_half_spread_rate": 0.9881435257410296
+          },
+          "USDTRY": {
+            "count": 3205,
+            "mae": 0.8692511811849754,
+            "rmse": 1.2842042758058012,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.35468437023164284,
+            "within_spread_rate": 0.9372854914196568,
+            "within_half_spread_rate": 0.7422776911076443
+          },
+          "USDZAR": {
+            "count": 3205,
+            "mae": 0.16946834810396638,
+            "rmse": 0.2954883821515641,
+            "spread_observations": 3205,
+            "mean_abs_error_to_spread": 0.25714409744469996,
+            "within_spread_rate": 0.963182527301092,
+            "within_half_spread_rate": 0.8817472698907957
+          }
+        }
+      },
+      "full_10d_wings": {
+        "count": 38460,
+        "mae": 0.4062617282652327,
+        "rmse": 0.8530625722526115,
+        "spread_observations": 38460,
+        "mean_abs_error_to_spread": 0.30513208711491463,
+        "within_spread_rate": 0.9386895475819033,
+        "within_half_spread_rate": 0.8107384295371814,
+        "by_pair": {
+          "USDCNH": {
+            "count": 6410,
+            "mae": 0.1833114114661549,
+            "rmse": 0.23584814240272378,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.49184135280886504,
+            "within_spread_rate": 0.8536661466458658,
+            "within_half_spread_rate": 0.6628705148205928
+          },
+          "USDHUF": {
+            "count": 6410,
+            "mae": 0.1277496145323576,
+            "rmse": 0.16861295398007536,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.07724927884652551,
+            "within_spread_rate": 1.0,
+            "within_half_spread_rate": 0.9996879875195008
+          },
+          "USDMXN": {
+            "count": 6410,
+            "mae": 0.24485341362926494,
+            "rmse": 0.32083535806694774,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.2682683793119719,
+            "within_spread_rate": 0.9900156006240249,
+            "within_half_spread_rate": 0.8486739469578783
+          },
+          "USDPLN": {
+            "count": 6410,
+            "mae": 0.16256434562267205,
+            "rmse": 0.2191699777496098,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.12180561414599755,
+            "within_spread_rate": 1.0,
+            "within_half_spread_rate": 0.9889235569422777
+          },
+          "USDTRY": {
+            "count": 6410,
+            "mae": 1.4497618142747744,
+            "rmse": 2.005802661191512,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.5270009012889778,
+            "within_spread_rate": 0.8095163806552262,
+            "within_half_spread_rate": 0.6290171606864274
+          },
+          "USDZAR": {
+            "count": 6410,
+            "mae": 0.2693297700661567,
+            "rmse": 0.32867113771833356,
+            "spread_observations": 6410,
+            "mean_abs_error_to_spread": 0.34462699628714427,
+            "within_spread_rate": 0.9789391575663027,
+            "within_half_spread_rate": 0.7352574102964119
+          }
+        }
+      }
+    }
+  }
+}

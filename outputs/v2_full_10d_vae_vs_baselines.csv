@@ -1,0 +1,5 @@
+key,label,mae,within_spread
+dealer_sticky,Dealer sticky,0.10941426417056667,99.57878315132605
+pca_5_components,PCA,0.4062617282652327,93.86895475819033
+target_only,VAE target-only,0.5792427876204576,92.34009360374415
+source_pretrained_target_finetuned,VAE transfer,0.49022671541296436,94.43577743109725

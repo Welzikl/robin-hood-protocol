@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="430" viewBox="0 0 820 430">
+<rect width="100%" height="100%" fill="white"/>
+<text x="410.0" y="28" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700">V2 Full 10D-Wing MAE Comparison</text>
+<text x="410.0" y="50" text-anchor="middle" font-family="Arial" font-size="12" fill="#555">Lower MAE is better; target-pair test split</text>
+<text x="148" y="87" text-anchor="end" font-family="Arial" font-size="13">Dealer sticky</text>
+<rect x="160" y="60" width="125.7986479482178" height="42" fill="#4C78A8"/>
+<text x="293.7986479482178" y="87" font-family="Arial" font-size="13">0.1094</text>
+<text x="148" y="151" text-anchor="end" font-family="Arial" font-size="13">PCA</text>
+<rect x="160" y="124" width="467.0979283761503" height="42" fill="#F58518"/>
+<text x="635.0979283761503" y="151" font-family="Arial" font-size="13">0.4063</text>
+<text x="148" y="215" text-anchor="end" font-family="Arial" font-size="13">Transfer VAE</text>
+<rect x="160" y="188" width="563.6363636363636" height="42" fill="#E45756"/>
+<text x="731.6363636363636" y="215" font-family="Arial" font-size="13">0.4902</text>
+<text x="148" y="279" text-anchor="end" font-family="Arial" font-size="13">Latent-opt VAE</text>
+<rect x="160" y="252" width="530.5451790204187" height="42" fill="#72B7B2"/>
+<text x="698.5451790204187" y="279" font-family="Arial" font-size="13">0.4614</text>
+<text x="148" y="343" text-anchor="end" font-family="Arial" font-size="13">Lagged transfer VAE</text>
+<rect x="160" y="316" width="266.0561784319802" height="42" fill="#54A24B"/>
+<text x="434.0561784319802" y="343" font-family="Arial" font-size="13">0.2314</text>
+<line x1="160" y1="388" x2="780" y2="388" stroke="#999"/>
+<line x1="160.0" y1="388" x2="160.0" y2="394" stroke="#999"/>
+<text x="160.0" y="410" text-anchor="middle" font-family="Arial" font-size="11" fill="#555">0.0</text>
+<line x1="389.9492646628038" y1="388" x2="389.9492646628038" y2="394" stroke="#999"/>
+<text x="389.9492646628038" y="410" text-anchor="middle" font-family="Arial" font-size="11" fill="#555">0.2</text>
+<line x1="619.8985293256076" y1="388" x2="619.8985293256076" y2="394" stroke="#999"/>
+<text x="619.8985293256076" y="410" text-anchor="middle" font-family="Arial" font-size="11" fill="#555">0.4</text>
+<line x1="849.8477939884112" y1="388" x2="849.8477939884112" y2="394" stroke="#999"/>
+<text x="849.8477939884112" y="410" text-anchor="middle" font-family="Arial" font-size="11" fill="#555">0.6</text>
+</svg>

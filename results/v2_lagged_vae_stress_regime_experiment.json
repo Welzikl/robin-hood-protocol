@@ -1,0 +1,420 @@
+{
+  "dataset": "v2",
+  "device": "cpu",
+  "seed": 20260618,
+  "target_pairs": [
+    "USDCNH",
+    "USDHUF",
+    "USDMXN",
+    "USDPLN",
+    "USDTRY",
+    "USDZAR"
+  ],
+  "regime_definitions": {
+    "high_spot_move": "test dates whose absolute spot log return is at or above the pair-specific 75th percentile fitted on train",
+    "wide_vol_spread": "test dates whose average volatility quote spread is at or above the pair-specific 75th percentile fitted on train",
+    "lower_liquidity_pair": "USDHUF, USDPLN, and USDTRY versus USDCNH, USDMXN, and USDZAR"
+  },
+  "thresholds": {
+    "AUDUSD": {
+      "high_spot_move": 0.0066645133965044555,
+      "wide_vol_spread": 0.5001999999999999
+    },
+    "EURUSD": {
+      "high_spot_move": 0.005528997366398756,
+      "wide_vol_spread": 0.41199999999999987
+    },
+    "GBPUSD": {
+      "high_spot_move": 0.005567123640899632,
+      "wide_vol_spread": 0.6949999999999998
+    },
+    "NZDUSD": {
+      "high_spot_move": 0.007244801407899719,
+      "wide_vol_spread": 0.6988
+    },
+    "USDCAD": {
+      "high_spot_move": 0.005214941417046135,
+      "wide_vol_spread": 0.5779999999999998
+    },
+    "USDCHF": {
+      "high_spot_move": 0.005633817718255844,
+      "wide_vol_spread": 0.6644
+    },
+    "USDCNH": {
+      "high_spot_move": 0.0021358278676611385,
+      "wide_vol_spread": 0.5287999999999999
+    },
+    "USDHUF": {
+      "high_spot_move": 0.00795614622098033,
+      "wide_vol_spread": 2.0132
+    },
+    "USDJPY": {
+      "high_spot_move": 0.0052075473787493946,
+      "wide_vol_spread": 0.4792000000000002
+    },
+    "USDMXN": {
+      "high_spot_move": 0.007783593191153718,
+      "wide_vol_spread": 1.0411999999999997
+    },
+    "USDPLN": {
+      "high_spot_move": 0.0077719908925860635,
+      "wide_vol_spread": 1.479
+    },
+    "USDTRY": {
+      "high_spot_move": 0.008047253727348873,
+      "wide_vol_spread": 1.6749999999999994
+    },
+    "USDZAR": {
+      "high_spot_move": 0.010379885229582332,
+      "wide_vol_spread": 1.5450000000000004
+    }
+  },
+  "lag_steps": [
+    1,
+    5
+  ],
+  "training_history": {
+    "pretrain": [
+      {
+        "epoch": 1,
+        "loss": 0.5506887815215371,
+        "reconstruction": 0.5505061501806433,
+        "kl": 0.09132173629900948
+      },
+      {
+        "epoch": 14,
+        "loss": 0.03823189979249781,
+        "reconstruction": 0.03726589239456437,
+        "kl": 0.48300364342602814
+      },
+      {
+        "epoch": 28,
+        "loss": 0.022340618751265785,
+        "reconstruction": 0.02103881893510168,
+        "kl": 0.6508997191082347
+      },
+      {
+        "epoch": 42,
+        "loss": 0.018058544024825096,
+        "reconstruction": 0.016852246258746494,
+        "kl": 0.6031488613648848
+      },
+      {
+        "epoch": 56,
+        "loss": 0.015641994097016075,
+        "reconstruction": 0.014512993564659899,
+        "kl": 0.5645002235065807
+      },
+      {
+        "epoch": 70,
+        "loss": 0.013542403890327974,
+        "reconstruction": 0.01247799498113719,
+        "kl": 0.5322044085372578
+      },
+      {
+        "epoch": 84,
+        "loss": 0.012692483565346762,
+        "reconstruction": 0.011672303757884285,
+        "kl": 0.5100898851047863
+      },
+      {
+        "epoch": 98,
+        "loss": 0.01214455770836635,
+        "reconstruction": 0.011157556182958862,
+        "kl": 0.4935007230802016
+      },
+      {
+        "epoch": 112,
+        "loss": 0.010924697430296377,
+        "reconstruction": 0.009977139363234694,
+        "kl": 0.47377904978665436
+      },
+      {
+        "epoch": 126,
+        "loss": 0.010578330352225086,
+        "reconstruction": 0.009657914919609373,
+        "kl": 0.46020773865959863
+      },
+      {
+        "epoch": 140,
+        "loss": 0.009966710243712772,
+        "reconstruction": 0.009080652824857018,
+        "kl": 0.4430286911400882
+      }
+    ],
+    "finetune": [
+      {
+        "epoch": 1,
+        "loss": 0.03822366187446996,
+        "reconstruction": 0.037240330325929744,
+        "kl": 0.49166585269727203
+      },
+      {
+        "epoch": 10,
+        "loss": 0.01741104925933637,
+        "reconstruction": 0.01643952805744974,
+        "kl": 0.48576053663303975
+      },
+      {
+        "epoch": 20,
+        "loss": 0.015429782485099216,
+        "reconstruction": 0.01448378672725276,
+        "kl": 0.47299783951357793
+      },
+      {
+        "epoch": 30,
+        "loss": 0.014178672609360595,
+        "reconstruction": 0.013244857472416601,
+        "kl": 0.46690761415581955
+      },
+      {
+        "epoch": 40,
+        "loss": 0.014191751270309874,
+        "reconstruction": 0.0132908078988916,
+        "kl": 0.4504717666851847
+      },
+      {
+        "epoch": 50,
+        "loss": 0.012373266349497595,
+        "reconstruction": 0.011485633391298745,
+        "kl": 0.44381650341184514
+      },
+      {
+        "epoch": 60,
+        "loss": 0.012401545175204151,
+        "reconstruction": 0.011525242099244343,
+        "kl": 0.4381515085697174
+      },
+      {
+        "epoch": 70,
+        "loss": 0.012085612373132455,
+        "reconstruction": 0.011218704479305367,
+        "kl": 0.433453945737136
+      },
+      {
+        "epoch": 80,
+        "loss": 0.01134419205941652,
+        "reconstruction": 0.01050405635645515,
+        "kl": 0.4200678624604878
+      },
+      {
+        "epoch": 90,
+        "loss": 0.011127914498118978,
+        "reconstruction": 0.010306478625065401,
+        "kl": 0.41071792966441106
+      },
+      {
+        "epoch": 100,
+        "loss": 0.01120373008674697,
+        "reconstruction": 0.010387955968709369,
+        "kl": 0.40788702431477997
+      }
+    ]
+  },
+  "regimes": {
+    "high_spot_move": {
+      "dealer_sticky": {
+        "normal": {
+          "included_surfaces": 3268,
+          "count": 32680,
+          "mae": 0.10206663606691115,
+          "rmse": 0.2701222995570829,
+          "spread_observations": 32680,
+          "mean_abs_error_to_spread": 0.08054525009128197,
+          "within_spread_rate": 0.9983476132190943,
+          "within_half_spread_rate": 0.9909424724602203
+        },
+        "stressed": {
+          "included_surfaces": 578,
+          "count": 5780,
+          "mae": 0.15500875432525926,
+          "rmse": 0.28003955131696484,
+          "spread_observations": 5780,
+          "mean_abs_error_to_spread": 0.17137225689469157,
+          "within_spread_rate": 0.9830449826989619,
+          "within_half_spread_rate": 0.9273356401384083
+        }
+      },
+      "pca_5_components": {
+        "normal": {
+          "included_surfaces": 3268,
+          "count": 32680,
+          "mae": 0.4415729040878417,
+          "rmse": 0.9175284866773836,
+          "spread_observations": 32680,
+          "mean_abs_error_to_spread": 0.3096110040456135,
+          "within_spread_rate": 0.9361689106487148,
+          "within_half_spread_rate": 0.8067931456548347
+        },
+        "stressed": {
+          "included_surfaces": 578,
+          "count": 5780,
+          "mae": 0.2066130732681901,
+          "rmse": 0.28697541847747016,
+          "spread_observations": 5780,
+          "mean_abs_error_to_spread": 0.27980838377664075,
+          "within_spread_rate": 0.9529411764705882,
+          "within_half_spread_rate": 0.833044982698962
+        }
+      },
+      "lagged_transfer_vae": {
+        "normal": {
+          "included_surfaces": 3268,
+          "count": 32680,
+          "mae": 0.2557040679360873,
+          "rmse": 0.6403634999331189,
+          "spread_observations": 32680,
+          "mean_abs_error_to_spread": 0.12648122941856396,
+          "within_spread_rate": 0.9886474908200734,
+          "within_half_spread_rate": 0.9437576499388005
+        },
+        "stressed": {
+          "included_surfaces": 578,
+          "count": 5780,
+          "mae": 0.09401354218742916,
+          "rmse": 0.16531570474086094,
+          "spread_observations": 5780,
+          "mean_abs_error_to_spread": 0.10991020347630882,
+          "within_spread_rate": 0.9916955017301038,
+          "within_half_spread_rate": 0.9714532871972318
+        }
+      }
+    },
+    "wide_vol_spread": {
+      "dealer_sticky": {
+        "normal": {
+          "included_surfaces": 2873,
+          "count": 28730,
+          "mae": 0.08412323471400371,
+          "rmse": 0.1567964380626441,
+          "spread_observations": 28730,
+          "mean_abs_error_to_spread": 0.09733531225196966,
+          "within_spread_rate": 0.9960320222763661,
+          "within_half_spread_rate": 0.980717020536025
+        },
+        "stressed": {
+          "included_surfaces": 973,
+          "count": 9730,
+          "mae": 0.18649822541966413,
+          "rmse": 0.4680413561644713,
+          "spread_observations": 9730,
+          "mean_abs_error_to_spread": 0.08492362762953125,
+          "within_spread_rate": 0.9960945529290853,
+          "within_half_spread_rate": 0.9833504624871532
+        }
+      },
+      "pca_5_components": {
+        "normal": {
+          "included_surfaces": 2873,
+          "count": 28730,
+          "mae": 0.19592126608499327,
+          "rmse": 0.2597823551018392,
+          "spread_observations": 28730,
+          "mean_abs_error_to_spread": 0.2677148241377525,
+          "within_spread_rate": 0.9615384615384616,
+          "within_half_spread_rate": 0.840341106856944
+        },
+        "stressed": {
+          "included_surfaces": 973,
+          "count": 9730,
+          "mae": 1.0273389614037955,
+          "rmse": 1.6362118155677299,
+          "spread_observations": 9730,
+          "mean_abs_error_to_spread": 0.4156149201399677,
+          "within_spread_rate": 0.8712230215827338,
+          "within_half_spread_rate": 0.7233299075025694
+        }
+      },
+      "lagged_transfer_vae": {
+        "normal": {
+          "included_surfaces": 2873,
+          "count": 28730,
+          "mae": 0.07254090744146563,
+          "rmse": 0.1197820566590045,
+          "spread_observations": 28730,
+          "mean_abs_error_to_spread": 0.08634476914396055,
+          "within_spread_rate": 0.9965193177862861,
+          "within_half_spread_rate": 0.9852419074138531
+        },
+        "stressed": {
+          "included_surfaces": 973,
+          "count": 9730,
+          "mae": 0.7004837557247037,
+          "rmse": 1.1623898157626793,
+          "spread_observations": 9730,
+          "mean_abs_error_to_spread": 0.23514926371898734,
+          "within_spread_rate": 0.9672147995889003,
+          "within_half_spread_rate": 0.8377183967112025
+        }
+      }
+    },
+    "lower_liquidity_pair": {
+      "dealer_sticky": {
+        "normal": {
+          "included_surfaces": 1923,
+          "count": 19230,
+          "mae": 0.0927330785231411,
+          "rmse": 0.1767118487645598,
+          "spread_observations": 19230,
+          "mean_abs_error_to_spread": 0.12569799855575017,
+          "within_spread_rate": 0.9934477379095163,
+          "within_half_spread_rate": 0.9689547581903276
+        },
+        "stressed": {
+          "included_surfaces": 1923,
+          "count": 19230,
+          "mae": 0.12731311319119468,
+          "rmse": 0.34109380678595475,
+          "spread_observations": 19230,
+          "mean_abs_error_to_spread": 0.06269255879393329,
+          "within_spread_rate": 0.9986479459178367,
+          "within_half_spread_rate": 0.9938117524700988
+        }
+      },
+      "pca_5_components": {
+        "normal": {
+          "included_surfaces": 1923,
+          "count": 19230,
+          "mae": 0.23249819838719288,
+          "rmse": 0.29809639941346927,
+          "spread_observations": 19230,
+          "mean_abs_error_to_spread": 0.3682455761359927,
+          "within_spread_rate": 0.9408736349453978,
+          "within_half_spread_rate": 0.7489339573582944
+        },
+        "stressed": {
+          "included_surfaces": 1923,
+          "count": 19230,
+          "mae": 0.5800252581432691,
+          "rmse": 1.1690038669795755,
+          "spread_observations": 19230,
+          "mean_abs_error_to_spread": 0.24201859809383394,
+          "within_spread_rate": 0.9365054602184087,
+          "within_half_spread_rate": 0.8725429017160686
+        }
+      },
+      "lagged_transfer_vae": {
+        "normal": {
+          "included_surfaces": 1923,
+          "count": 19230,
+          "mae": 0.0888885848128028,
+          "rmse": 0.14377905092971854,
+          "spread_observations": 19230,
+          "mean_abs_error_to_spread": 0.11798520400995473,
+          "within_spread_rate": 0.9943837753510141,
+          "within_half_spread_rate": 0.9765990639625585
+        },
+        "stressed": {
+          "included_surfaces": 1923,
+          "count": 19230,
+          "mae": 0.37391990265441893,
+          "rmse": 0.8272959783774758,
+          "spread_observations": 19230,
+          "mean_abs_error_to_spread": 0.12999646803849643,
+          "within_spread_rate": 0.9838273530941237,
+          "within_half_spread_rate": 0.9192407696307853
+        }
+      }
+    }
+  }
+}

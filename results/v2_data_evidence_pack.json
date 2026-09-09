@@ -1,0 +1,62 @@
+{
+  "common_start": "2010-01-01",
+  "common_end": "2026-06-15",
+  "records": 1394900,
+  "pair_date_matrices": 55796,
+  "pairs": [
+    "AUDUSD",
+    "EURUSD",
+    "GBPUSD",
+    "NZDUSD",
+    "USDCAD",
+    "USDCHF",
+    "USDJPY",
+    "USDCNH",
+    "USDHUF",
+    "USDMXN",
+    "USDPLN",
+    "USDTRY",
+    "USDZAR"
+  ],
+  "source_pairs": [
+    "AUDUSD",
+    "EURUSD",
+    "GBPUSD",
+    "NZDUSD",
+    "USDCAD",
+    "USDCHF",
+    "USDJPY"
+  ],
+  "target_pairs": [
+    "USDCNH",
+    "USDHUF",
+    "USDMXN",
+    "USDPLN",
+    "USDTRY",
+    "USDZAR"
+  ],
+  "missing_last_values": 8973,
+  "usdcnh_missing_share": 0.9385935584531372,
+  "role_median_spreads": {
+    "source": 0.3999999999999986,
+    "target": 0.9000000000000004
+  },
+  "correlation_summary": {
+    "mean_source_source": 0.6068967703884947,
+    "mean_target_target": 0.34947388329430473,
+    "mean_source_target": 0.424970828984777
+  },
+  "correlation_min_pairwise_observations": 3972,
+  "artifacts": [
+    "outputs\\v2_data_pair_coverage_summary.csv",
+    "outputs\\v2_data_descriptive_statistics.csv",
+    "outputs\\v2_data_3m_atm_change_correlations.csv",
+    "outputs\\v2_data_3m_atm_change_pairwise_counts.csv",
+    "outputs\\v2_data_monthly_3m_atm_context.csv",
+    "outputs\\v2_data_3m_atm_change_correlation_heatmap.png",
+    "outputs\\v2_data_3m_atm_change_correlation_heatmap.svg",
+    "outputs\\v2_data_monthly_3m_atm_context.png",
+    "outputs\\v2_data_monthly_3m_atm_context.svg",
+    "results\\v2_data_evidence_pack.md"
+  ]
+}
